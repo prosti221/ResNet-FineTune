@@ -68,11 +68,7 @@ def reproduce(self, dataloader, PATH): # PATH to old run
     print('All the tensors are equal')
 ```
 
-The model can be loaded from file using load_final_model() in train.py.
-The reproduction function doesn't seem to work when loading the model
-from file, however if the model is trained with the same parameters and
-compared with the old output tensors from file, it seems to work fine. I
-was unable to find the problem in time.\
+The model can be loaded from file using load_final_model() in train.py.\
 \
 For classes \[1, 2, 3\] $\rightarrow$ \[glacier, mountain, sea\], I get
 the following 10 best and worst images for each class respectively.
