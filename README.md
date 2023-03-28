@@ -1,9 +1,3 @@
----
-author:
-- Carlos Ankour Navarro
-title: "IN4310: Mandatory Assignment 1"
----
-
 # Task 1 {#task-1 .unnumbered}
 
 For this task I create the custom dataset MandatoryDataset that returns
@@ -84,19 +78,19 @@ For classes \[1, 2, 3\] $\rightarrow$ \[glacier, mountain, sea\], I get
 the following 10 best and worst images for each class respectively.
 
 <figure id="fig:boxplot">
-<img src="../plots/glacier.png" style="width:100.0%" />
+<img src="plots/glacier.png" style="width:100.0%" />
 <figcaption>10 best(top row) and 10 worst(bottom row) glacier
 images</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/forest.png" style="width:100.0%" />
+<img src="plots/forest.png" style="width:100.0%" />
 <figcaption>10 best(top row) and 10 worst(bottom row) forest
 images</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/mountain.png" style="width:100.0%" />
+<img src="plots/mountain.png" style="width:100.0%" />
 <figcaption>10 best(top row) and 10 worst(bottom row) mountain
 images</figcaption>
 </figure>
@@ -104,27 +98,27 @@ images</figcaption>
 The requested metrics for the model are plotted below.
 
 <figure id="fig:boxplot">
-<img src="../plots/validation_loss.png" style="width:50.0%" />
+<img src="plots/validation_loss.png" style="width:50.0%" />
 <figcaption>Validation loss</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/training_loss.png" style="width:51.0%" />
+<img src="plots/training_loss.png" style="width:51.0%" />
 <figcaption>Training loss</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/validation_mean_acc.png" style="width:51.0%" />
+<img src="plots/validation_mean_acc.png" style="width:51.0%" />
 <figcaption>Mean class accuracy on the validation set</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/training_mean_acc.png" style="width:51.0%" />
+<img src="plots/training_mean_acc.png" style="width:51.0%" />
 <figcaption>Mean class accuracy on the training set</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/test_set_metrics.png" style="width:51.0%" />
+<img src="plots/test_set_metrics.png" style="width:51.0%" />
 <figcaption>Final test set metrics</figcaption>
 </figure>
 
@@ -140,7 +134,7 @@ convolutional layer, and the 4 layers following each pair of residual
 blocks, named layer1, layer2, layer3 and layer4.
 
 <figure id="fig:boxplot">
-<img src="../plots/task2.png" style="width:80.0%" />
+<img src="plots/task2.png" style="width:80.0%" />
 <figcaption>Module statistics for task 2</figcaption>
 </figure>
 
@@ -150,13 +144,13 @@ is to be expected for ReLU activations.
 # Task 3 {#task-3 .unnumbered}
 
 <figure id="fig:boxplot">
-<img src="../plots/mandatory_finetuned.png" style="width:170.0%" />
+<img src="plots/mandatory_finetuned.png" style="width:170.0%" />
 <figcaption>Eigenvalues per layer for the fine-tuned model on the
 Mandatory data</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/mandatory_initialized.png" style="width:170.0%" />
+<img src="plots/mandatory_initialized.png" style="width:170.0%" />
 <figcaption>Eigenvalues per layer for the initialized model on the
 Mandatory data(no fine-tuning)</figcaption>
 </figure>
@@ -166,13 +160,13 @@ eigenvalues for the initialized model on the mandatory dataset, and the
 fine-tuned model on the mandatory dataset.
 
 <figure id="fig:boxplot">
-<img src="../plots/ImageNet_initialized.png" style="width:170.0%" />
+<img src="plots/ImageNet_initialized.png" style="width:170.0%" />
 <figcaption>Eigenvalues per layer for the initialized model on the
 ImageNet data(no fine-tuning)</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="../plots/CIFAR_initialized.png" style="width:170.0%" />
+<img src="plots/CIFAR_initialized.png" style="width:170.0%" />
 <figcaption>Eigenvalues per layer for the initialized model on the
 CIFAR-100 data(no fine-tuning)</figcaption>
 </figure>
