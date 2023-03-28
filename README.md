@@ -1,4 +1,4 @@
-# Task 1 {#task-1 .unnumbered}
+# Task 1
 
 For this task I create the custom dataset MandatoryDataset that returns
 items of the form (images, labels, filenames). This is defined in
@@ -98,22 +98,22 @@ images</figcaption>
 The requested metrics for the model are plotted below.
 
 <figure id="fig:boxplot">
-<img src="plots/validation_loss.png" style="width:50.0%" />
+<img src="plots/validation_loss.png" style="width:20.0%" />
 <figcaption>Validation loss</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="plots/training_loss.png" style="width:51.0%" />
+<img src="plots/training_loss.png" style="width:21.0%" />
 <figcaption>Training loss</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="plots/validation_mean_acc.png" style="width:51.0%" />
+<img src="plots/validation_mean_acc.png" style="width:21.0%" />
 <figcaption>Mean class accuracy on the validation set</figcaption>
 </figure>
 
 <figure id="fig:boxplot">
-<img src="plots/training_mean_acc.png" style="width:51.0%" />
+<img src="plots/training_mean_acc.png" style="width:21.0%" />
 <figcaption>Mean class accuracy on the training set</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ similar, which suggests that the model is not overfitting. There does
 seem to be some slight instability in the training loss, which could
 suggest that a lower learning rate might have been better.
 
-# Task 2 {#task-2 .unnumbered}
+# Task 2
 
 For this section, I chose the following modules from ResNet18: the first
 convolutional layer, and the 4 layers following each pair of residual
@@ -141,7 +141,7 @@ blocks, named layer1, layer2, layer3 and layer4.
 This shows that none of the module outputs have negative values, which
 is to be expected for ReLU activations.
 
-# Task 3 {#task-3 .unnumbered}
+# Task 3
 
 <figure id="fig:boxplot">
 <img src="plots/mandatory_finetuned.png" style="width:170.0%" />
