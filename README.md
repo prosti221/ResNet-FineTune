@@ -95,37 +95,12 @@ images</figcaption>
 images</figcaption>
 </figure>
 
-The requested metrics for the model are plotted below.
-
-<figure id="fig:boxplot">
-<img src="plots/validation_loss.png" style="width:20.0%" />
-<figcaption>Validation loss</figcaption>
-</figure>
-
-<figure id="fig:boxplot">
-<img src="plots/training_loss.png" style="width:21.0%" />
-<figcaption>Training loss</figcaption>
-</figure>
-
-<figure id="fig:boxplot">
-<img src="plots/validation_mean_acc.png" style="width:21.0%" />
-<figcaption>Mean class accuracy on the validation set</figcaption>
-</figure>
-
-<figure id="fig:boxplot">
-<img src="plots/training_mean_acc.png" style="width:21.0%" />
-<figcaption>Mean class accuracy on the training set</figcaption>
-</figure>
+The result for the final test set.
 
 <figure id="fig:boxplot">
 <img src="plots/test_set_metrics.png" style="width:51.0%" />
 <figcaption>Final test set metrics</figcaption>
 </figure>
-
-The accuracy on the unseen test set and the validation set are very
-similar, which suggests that the model is not overfitting. There does
-seem to be some slight instability in the training loss, which could
-suggest that a lower learning rate might have been better.
 
 # Task 2
 
