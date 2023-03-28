@@ -53,8 +53,6 @@ if __name__ == '__main__':
     #testset_metrics = fine_tuned_model.evaluate(test_loader, TEST=True,  PATH='new_output')
     fine_tuned_model.best_and_worst(k=10, PATH='./old_output', plot=plot)
 
-    # This reproduce seems to only work when training the model again on the same parameters and comparing with old saved tensor,
-    # loading a model from file breaks something I haven't been able to find.
     #fine_tuned_model.reproduce(test_loader, PATH='old_output')
 
     # Task 2 and 3 statistics
