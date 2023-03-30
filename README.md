@@ -42,32 +42,6 @@ I tried different parameters through trial and error and ultimately
 arrived at the best one listed above. The per class and mean class
 metrics are calculated in the evaluate() function in train.py.\
 \
-The reproduction routine is implemented in the reproduce() function in
-train.py, where it uses the current model, whether trained or loaded
-from file, and compares it to some previous output saved as a list of
-tensors in PATH.
-
-``` {.python language="python"}
-def reproduce(self, dataloader, PATH): # PATH to old run
-    outputs = torch.load(PATH,  map_location=torch.device(self.device))
-    self.model.eval()
-    for batch_idx, data in enumerate(dataloader):
-        with torch.no_grad():
-            inputs = data[0].to(self.device)
-            labels = data[1].to(self.device)
-            filenames = data[2]
-
-            out = self.model(inputs)
-            _, predictions = torch.max(out, dim=1)
-            
-            out_equal = torch.equal(out, outputs[batch_idx][0]) 
-            pred_equal = torch.equal(predictions, outputs[batch_idx][1]) 
-            files_equal = filenames == outputs[batch_idx][2]
-
-            assert out_equal and pred_qual and files_equal
-    print('All the tensors are equal')
-```
-
 The model can be loaded from file using load_final_model() in train.py.\
 \
 For classes \[1, 2, 3\] $\rightarrow$ \[glacier, mountain, sea\], I get
