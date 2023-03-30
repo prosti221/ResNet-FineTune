@@ -89,7 +89,7 @@ def load_splits(dataset, batch_size, num_workers=0, ratio=[0.117, 0.176], seed=-
     val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False, num_workers=num_workers)
     test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False, num_workers=num_workers)
 
-    return train_loader, val_loader, test_loader# Plots a histogram of the class distribution for a given dataset
+    return train_loader, val_loader, test_loader
 
 def load_CIFAR(PATH, batch_size, transform, download=True, num_workers=0):
     dataset = torchvision.datasets.CIFAR100(root=PATH, train=False, download=True, transform=transform)
