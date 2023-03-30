@@ -237,7 +237,6 @@ class FineTune:
                     avg_per_img = [(torch.sum((output[i] < 0)) / output[i].view(-1).shape[0]).item() for i in range(batch_size)]
                     avg = sum(avg_per_img) / len(avg_per_img)
                     # Compute mean of all spatial dimensions
-                    c = output.shape[1]
                     msd_per_img = output.mean(dim=[2,3])
                     # Append to results
                     if module.batch_idx != 0:
